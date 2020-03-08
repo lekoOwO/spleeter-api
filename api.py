@@ -3,7 +3,6 @@ import shutil
 import pathlib
 
 import falcon
-from falcon_cors import CORS
 from falcon_multipart.middleware import MultipartMiddleware
 
 import uuid as _uuid

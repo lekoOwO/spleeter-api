@@ -1,6 +1,6 @@
-FROM python:3.7-alpine
+FROM python:3.7-slim
 
-RUN apk add --no-cache ffmpeg libsndfile
+RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
 
 COPY . /app
 WORKDIR /app
