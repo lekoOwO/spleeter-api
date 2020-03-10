@@ -40,7 +40,7 @@ def add_task(uuid, task):
     statuses[uuid] = task
 
     global clean_time
-    t = Timer(clean_time, clean, args=(uuid))
+    t = Timer(clean_time, clean, args=(uuid,))
     t.start()
 
 class Status:
