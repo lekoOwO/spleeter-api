@@ -1,6 +1,6 @@
 FROM python:3.7-slim
 
-ARG SPLEETER_VERSION=1.5.3
+ARG SPLEETER_VERSION=2.3.2
 ARG NUMPY_VERSION=1.19.5
 
 RUN apt-get update && apt-get install -y ffmpeg libsndfile1 && rm -rf /var/lib/apt/lists/*
